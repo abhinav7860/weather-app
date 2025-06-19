@@ -1,0 +1,117 @@
+.weather {
+  place-self: center;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Transparent for glass effect */
+  backdrop-filter: blur(12px); /* 🔍 Glassy blur */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}
+
+
+/* 🔍 Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebffff;
+  font-size: 18px;
+}
+.search-bar img {
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #ebffff;
+  cursor: pointer;
+}
+
+/* 🌤️ Weather icon */
+.weather-icon {
+  width: 150px;
+  margin: 30px 0;
+  animation: tilt-spin 10s ease-in-out infinite;
+}
+
+/* 3D Floating Text Styling */
+.temperature,
+.location,
+.local-time
+.condition-text {
+  color: #ffffff;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  transform: translateZ(30px);
+  perspective: 600px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.temperature {
+  font-size: 80px;
+  
+}
+
+.location {
+  font-size: 40px;
+  
+}
+
+.local-time {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 🔄 Tilt-Spin Animation */
+@keyframes tilt-spin {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  50% { transform: rotateX(10deg) rotateY(10deg); }
+  100% { transform: rotateX(0deg) rotateY(0deg); }
+}
+
+/* 📊 Weather data layout */
+.weather-data {
+  width: 100%;
+  margin-top: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.weather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+}
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+.weather-data .col img {
+  width: 29px;
+  margin-top: 20px;
+}
+.condition-text {
+  font-size: 22px;
+  margin: -10px 0 10px 0;
+  color: #fff;
+  text-transform: capitalize;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
