@@ -41,7 +41,7 @@ After building the base app, I made the following enhancements:
 
  1. Clone the Repository
 '''bash
-git clone [https://github.com/your-username/weather-app.git](https://github.com/abhinav7860/weather-app)
+git clone [https://github.com/abhinav7860/weather-app.git]
 cd weather-app
 
 2. Install Dependencies
