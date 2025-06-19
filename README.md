@@ -1,12 +1,80 @@
-# React + Vite
+🌦️ React Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, real-time weather app built with **React JS** and the **OpenWeatherMap API**.  
+This project was originally built by following a tutorial by [Rohit Tech](https://youtu.be/zs1Nq2s_uy4), and I later extended it with several unique features and improvements.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features From the Original Tutorial
+This project started with these core features:
+-  City-based weather search
+-  Current temperature display (in Celsius)
+-  Wind speed and 💧 humidity info
+-  Weather icons that change based on condition
+- Basic CSS layout and styling
+- Uses OpenWeatherMap's `/weather` API
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features I Added or Improved
+After building the base app, I made the following enhancements:
+
+| Feature                         | Description |
+|----------------------------------|-------------|
+| ⏰ Live Updating Clock            | Local time of the searched city updates every second using `timezone` and `dt` from the API |
+| 🌤️ Condition Label Below Icon    | Shows weather type like “Rain”, “Snow”, “Clear”, etc., under the icon — only for supported PNG icons |
+| 🧊 Glassmorphism Card UI         | Weather container uses a translucent, blurred “frosted glass” effect for a modern UI |
+| 🧼 Accessibility-Focused UI      | Removed floating text animation for better comfort and readability |
+| 🖼️ Dynamic Backgrounds           | Automatically switches background image based on weather condition (e.g., rain, clear, snow) |
+| 📁 `.env.example` File           | Added a sharable template for setting up environment variables (API key) without exposing them |
+
+
+
+
+ Tech Stack:
+- ⚛️ React JS (using Vite)
+- 📦 JavaScript (ES6+)
+- 🌤️ OpenWeatherMap API
+- 🎨 CSS (custom styling, glassmorphism)
+
+---
+
+🚀 Getting Started
+
+ 1. Clone the Repository
+'''bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+
+3. Add Your API Key
+Create a file named .env in the root directory:
+
+ini
+Copy
+Edit
+VITE_APP=your_openweathermap_api_key
+📌 Don’t commit this file! It’s in .gitignore for your safety.
+Use .env.example as a guide.
+
+4. Run the App
+bash
+Copy
+Edit
+npm run dev
+
+📷 Screenshots 
+![image](https://github.com/user-attachments/assets/073f4b0e-947c-41d9-9b63-92b678b21dd4)
+![image](https://github.com/user-attachments/assets/be951c48-cede-4caa-97d2-28874b9dcb62)
+
+🙋 About Me
+Author: Abhinav Sabu
+📧 Email: abhinavsabu0@gmail.com
+🔗 GitHub:(https://github.com/abhinav7860)
+
+⭐ If you liked this project, feel free to star the repo or fork it to make your own version!
+
+
