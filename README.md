@@ -53,9 +53,6 @@ npm install
 3. Add Your API Key
 Create a file named .env in the root directory:
 
-ini
-Copy
-Edit
 VITE_APP=your_openweathermap_api_key
 📌 Don’t commit this file! It’s in .gitignore for your safety.
 Use .env.example as a guide.
