@@ -1,14 +1,14 @@
 🌦️ React Weather App
 
 A responsive, real-time weather app built with **React JS** and the **OpenWeatherMap API**.  
-This project was originally built by following a tutorial by [Rohit Tech](https://youtu.be/zs1Nq2s_uy4), and I later extended it with several unique features and improvements.
+This project was originally built by following a tutorial by [GreatStack](https://www.youtube.com/watch?v=zs1Nq2s_uy4&t=152s), and I later extended it with several unique features and improvements.
 
 
 Features From the Original Tutorial
 This project started with these core features:
 -  City-based weather search
 -  Current temperature display (in Celsius)
--  Wind speed and 💧 humidity info
+-  Wind speed and  humidity info
 -  Weather icons that change based on condition
 - Basic CSS layout and styling
 - Uses OpenWeatherMap's `/weather` API
@@ -29,7 +29,7 @@ After building the base app, I made the following enhancements:
 
 
 
- Tech Stack:
+ Technologies Used:
 - ⚛️ React JS (using Vite)
 - 📦 JavaScript (ES6+)
 - 🌤️ OpenWeatherMap API
@@ -66,7 +66,8 @@ Copy
 Edit
 npm run dev
 
-📷 Screenshots 
+📷 Screenshots :
+
 ![image](https://github.com/user-attachments/assets/073f4b0e-947c-41d9-9b63-92b678b21dd4)
 ![image](https://github.com/user-attachments/assets/be951c48-cede-4caa-97d2-28874b9dcb62)
 
